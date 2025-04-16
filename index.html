@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元力音乐最新版下载+附音源 - 免费无损听歌|全网音源|歌词同步</title>
+    <meta name="description" content="元力音乐v1.3.3最新版下载，支持在线播放和本地播放的音乐软件，提供歌手榜单、热门专辑、海量无损音乐，支持歌词同步显示，每日推荐，多种音频格式，免费下载付费音乐！">
+    <meta name="keywords" content="元力音乐,无损音乐,免费音乐,歌词同步,音乐下载,歌手榜单,热门专辑,本地播放,音乐软件">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E88E5', // 蓝色主题
+                        secondary: '#E3F2FD', // 浅蓝色
+                        accent: '#1565C0',   // 深蓝色
+                        textColor: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .feature-icon {
+                @apply text-4xl text-primary mb-3;
+            }
+            .category-badge {
+                @apply inline-block bg-green-100 text-green-800 text-sm font-medium mr-2 mb-2 px-3 py-1 rounded-full; /* Adjusted color */
+            }
+            .feature-box {
+                @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 h-full;
+            }
+            .step-box {
+                @apply bg-white p-4 md:p-6 rounded-xl shadow-lg text-center h-full hover:shadow-xl transition-shadow duration-300;
+            }
+            .step-image {
+                @apply w-full h-48 object-contain rounded-lg mb-4 border border-gray-200; /* Changed object-cover to object-contain */
+            }
+            .step-title {
+                 @apply font-semibold text-lg mb-2 text-primary;
+            }
+            .step-description {
+                @apply text-gray-600 text-sm leading-relaxed;
+            }
+            .wave-shape {
+                @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180;
+            }
+            .shape-fill {
+                @apply fill-white;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a class="font-bold text-xl text-primary" href="#">元力音乐</a>
+            <button class="md:hidden" type="button" id="navbarToggler">
+                <span class="block w-6 h-0.5 bg-gray-600 my-1"></span>
+                <span class="block w-6 h-0.5 bg-gray-600 my-1"></span>
+                <span class="block w-6 h-0.5 bg-gray-600 my-1"></span>
+            </button>
+            <!-- 更新导航链接 -->
+            <div class="hidden md:flex space-x-6" id="navbarMenu">
+                <a class="hover:text-primary transition" href="#about">软件介绍</a>
+                <a class="hover:text-primary transition" href="#features">核心功能</a>
+                <a class="hover:text-primary transition" href="#advantages">软件特色</a>
+                <a class="hover:text-primary transition" href="#music">音乐资源</a>
+                <a class="hover:text-primary transition" href="#download">立即下载</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative">
+        <header class="bg-gradient-to-r from-blue-500/90 to-blue-700/70 bg-[url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')] bg-center bg-cover text-white py-32 text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">元力音乐 v1.3.3</h1>
+                <p class="text-xl mb-10">免费无损听歌下载软件<br>海量音乐资源·歌词同步·每日推荐</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-3">
+                    <a href="#download" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                        <i class="fas fa-download mr-2"></i>立即下载
+                    </a>
+                    <a href="#features" class="border border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white/10 transition">了解功能</a>
+                </div>
+            </div>
+        </header>
+        <!-- 波浪形状保持不变 -->
+    </div>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <img src="https://www.haitangw.cc/wp-content/uploads/2024/09/202409242349022646-921x1024.jpg" alt="元力音乐界面预览" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">元力音乐 - 免费无损听歌软件</h2>
+                    <p class="text-xl mb-4">元力音乐是一款可以导入源，支持在线播放和本地播放的音乐软件！</p>
+                    <p class="mb-6 text-gray-600">元力音乐app提供了丰富的音乐资源，这里的歌曲都可以搜索到，还提供了歌手榜单，热门专辑，海量无损音乐任你聆听。软件支持歌词同步显示，根据您的听歌口味推荐歌曲，支持多种音频格式，提供流畅的播放体验。</p>
+                    
+                    <div class="mb-6">
+                        <h5 class="font-bold mb-3 text-gray-700">支持功能</h5>
+                        <span class="category-badge bg-blue-100 text-blue-800">歌曲搜索</span>
+                        <span class="category-badge bg-blue-100 text-blue-800">歌词同步</span>
+                        <span class="category-badge bg-blue-100 text-blue-800">歌手榜单</span>
+                        <span class="category-badge bg-blue-100 text-blue-800">热门专辑</span>
+                        <span class="category-badge bg-blue-100 text-blue-800">本地播放</span>
+                    </div>
+                    
+                    <div class="space-y-3 text-gray-700">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>海量无损音乐资源，免费下载收听</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>同步显示歌词，增强听歌体验</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>根据听歌口味，推送每日推荐歌曲</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>支持多种音频格式，流畅播放体验</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>免费下载付费音乐，无需会员</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="music" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">音乐资源</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-microphone-alt text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">歌手榜单</h3>
+                    <p class="text-gray-600 text-sm">提供最新热门歌手名单，发现更多优质音乐</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-compact-disc text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">热门专辑</h3>
+                    <p class="text-gray-600 text-sm">聚合大量热门专辑，一键收听完整专辑</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-music text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">无损音质</h3>
+                    <p class="text-gray-600 text-sm">海量无损音乐资源，享受高品质音乐体验</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-file-audio text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">多种格式</h3>
+                    <p class="text-gray-600 text-sm">支持多种音频格式，兼容性更强</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-thumbs-up text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">每日推荐</h3>
+                    <p class="text-gray-600 text-sm">根据收听偏好，推送感兴趣的内容</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fas fa-folder-open text-primary text-3xl mb-3"></i>
+                    <h3 class="font-bold mb-2">本地播放</h3>
+                    <p class="text-gray-600 text-sm">强大的本地音乐播放服务，轻松管理本地音乐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">核心功能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-search feature-icon"></i>
+                        <h4 class="text-xl font-bold">歌曲搜索</h4>
+                    </div>
+                    <p class="text-gray-600">支持歌曲搜索功能，播放后可以轻松搜索到相应的歌词和MV，满足您的多样化需求。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-list-ol feature-icon"></i>
+                        <h4 class="text-xl font-bold">歌手榜单</h4>
+                    </div>
+                    <p class="text-gray-600">提供最新热门歌手名单，根据收听偏好，推送感兴趣的内容，发现更多优质音乐。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-album-collection feature-icon"></i>
+                        <h4 class="text-xl font-bold">热门专辑</h4>
+                    </div>
+                    <p class="text-gray-600">聚合大量热门专辑，音效切换自如，海量无损的音乐随时听，享受完整的音乐体验。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-play-circle feature-icon"></i>
+                        <h4 class="text-xl font-bold">本地播放</h4>
+                    </div>
+                    <p class="text-gray-600">内置非常强大的本地音乐播放服务，直接点击播放您喜爱的歌曲，轻松管理本地音乐。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="py-16 bg-secondary">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">软件特色</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-file-alt feature-icon"></i>
+                        <h4 class="text-xl font-bold">歌词同步</h4>
+                    </div>
+                    <p class="text-gray-600">同步显示歌曲歌词，增强听歌体验，让您在欣赏音乐的同时，也能跟着歌词一起唱。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-thumbs-up feature-icon"></i>
+                        <h4 class="text-xl font-bold">每日推荐</h4>
+                    </div>
+                    <p class="text-gray-600">根据你的听歌口味和偏好，推送每日推荐的歌曲，帮助您发现更多喜欢的音乐。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-file-audio feature-icon"></i>
+                        <h4 class="text-xl font-bold">多种格式</h4>
+                    </div>
+                    <p class="text-gray-600">支持多种音频格式，提供流畅的播放体验，无论是什么格式的音乐文件都能轻松播放。</p>
+                </div>
+                <div class="feature-box">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-download feature-icon"></i>
+                        <h4 class="text-xl font-bold">免费下载</h4>
+                    </div>
+                    <p class="text-gray-600">免费搜索和下载音乐资源，包括付费音乐的下载，无需会员，让您畅享音乐世界。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="themes" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">界面展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <div class="h-40 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-home text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold">首页推荐</h3>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <div class="h-40 bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-music text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="font-bold">播放界面</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">立即下载</h2>
+            <p class="text-xl mb-10 text-gray-600">元力音乐 v1.3.3 最新版<br>免费无损听歌下载软件，海量音乐资源</p>
+            <div class="inline-block bg-white p-8 rounded-xl shadow-xl max-w-lg w-full">
+                <h3 class="text-2xl font-bold mb-4 text-primary">元力音乐</h3>
+                <div class="mb-4">
+                    <span class="bg-blue-500 text-white text-sm px-3 py-1 rounded-full mr-2">更新日期：最近</span>
+                    <span class="bg-blue-600 text-white text-sm px-3 py-1 rounded-full mr-2">完全免费</span>
+                    <span class="bg-green-500 text-white text-sm px-3 py-1 rounded-full">无损音质</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 my-6">
+                    <a href="https://music-l2f.pages.dev/" class="bg-primary hover:bg-accent text-white font-bold py-3 px-4 rounded-lg transition-colors">
+                        <i class="fab fa-windows mr-2"></i>Windows版下载
+                    </a>
+                    <a href="https://music-l2f.pages.dev/" class="bg-primary hover:bg-accent text-white font-bold py-3 px-4 rounded-lg transition-colors">
+                        <i class="fab fa-android mr-2"></i>Android版下载
+                    </a>
+                </div>
+                <div class="mt-4 space-x-2">
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">Windows/macOS</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">Android/iOS</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">v1.3.3</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">无损音质</span>
+                </div>
+                <p class="mt-4 text-gray-500 text-sm">注意：链接容易失效，请尽快保存！如果用不了，可以反馈给我们，我们会定期检查更新。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">元力音乐 - 免费无损听歌下载软件<br>海量音乐资源，歌词同步，每日推荐，让您的音乐体验更加丰富！</p>
+            <p class="text-gray-400 text-sm mb-2">本站所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有</p>
+            <p class="text-gray-400 text-sm">本软件仅供学习交流，音乐版权归各平台所有，请支持正版音乐。</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript部分保持不变 -->
+</body>
+</html>
